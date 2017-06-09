@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#检查是否存在mysqldiff命令
-if ! command -v mysqldiff >/dev/null 2>&1; then
+#检查是否存在mysqldbcompare命令
+if ! command -v mysqldbcompare >/dev/null 2>&1; then
 	sudo yum install -y mysql-utilities
 	#如果没执行成功就退出
 	if [ ! "$?" -eq "0" ]; then 
